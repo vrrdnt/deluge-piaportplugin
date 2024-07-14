@@ -11,5 +11,7 @@ jobs:
       uses: actions/setup-python@v5
       with:
         python-version: 3.12.3
+    - name: Install python3-setuptools
+      run: sudo apt-get install python3-setuptools
     - name: Build egg
       run: python3 setup.py bdist_egg
