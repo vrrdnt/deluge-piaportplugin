@@ -12,6 +12,6 @@ jobs:
       with:
         python-version: 3.12.3
     - name: Install python3-setuptools
-      run: sudo apt-get install python3-setuptools
+      run: pip3 install --upgrade setuptools
     - name: Build egg
       run: python3 setup.py bdist_egg
